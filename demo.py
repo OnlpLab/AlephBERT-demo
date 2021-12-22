@@ -44,7 +44,7 @@ st.markdown(
 def get_json_from_url(url):
     return requests.get(url).json()
 
-models = get_json_from_url('https://nlp.biu.ac.il/~amitse/alephbert_demo/models.json')
+models = get_json_from_url('https://nlp.biu.ac.il/~rtsarfaty/alephbert_demo/models.json')
 
 @st.cache(show_spinner=False, hash_funcs={tokenizers.Tokenizer: str})
 def load_model(model):
